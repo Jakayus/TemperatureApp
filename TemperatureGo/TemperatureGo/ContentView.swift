@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //MARK: PROPERTIES
+    
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Text("Temperature Go")
+                //.padding()
+            Text("Your personal Temperature converter")
+                .font(.caption2)
+            
+            HStack {
+                Text("Degrees")
+                Text("Type")
+            }
+            
+            Button(action: {
+                
+            }, label: {
+                Text("Convert")
+            })
+            
+            
+            Text("Result")
+            
+        }
     }
 }
 
