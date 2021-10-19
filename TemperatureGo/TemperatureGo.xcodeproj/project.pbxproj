@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC4FF769271E99FA009115D9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4FF768271E99FA009115D9 /* Colors.xcassets */; };
+		DC4FF76D271E9BB7009115D9 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4FF76C271E9BB7009115D9 /* ColorManager.swift */; };
 		DC53A6FF269AD726002AF36C /* TemperatureGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A6FE269AD726002AF36C /* TemperatureGoApp.swift */; };
 		DC53A701269AD726002AF36C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A700269AD726002AF36C /* ContentView.swift */; };
 		DC53A703269AD728002AF36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC53A702269AD728002AF36C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		DC4FF768271E99FA009115D9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DC4FF76C271E9BB7009115D9 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		DC53A6FB269AD726002AF36C /* TemperatureGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemperatureGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC53A6FE269AD726002AF36C /* TemperatureGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureGoApp.swift; sourceTree = "<group>"; };
 		DC53A700269AD726002AF36C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC4FF76A271E9B89009115D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC53A700269AD726002AF36C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC4FF76B271E9B94009115D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC4FF76C271E9BB7009115D9 /* ColorManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DC53A6F2269AD726002AF36C = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		DC53A6FD269AD726002AF36C /* TemperatureGo */ = {
 			isa = PBXGroup;
 			children = (
+				DC4FF76B271E9B94009115D9 /* Models */,
+				DC4FF76A271E9B89009115D9 /* Views */,
 				DC53A6FE269AD726002AF36C /* TemperatureGoApp.swift */,
-				DC53A700269AD726002AF36C /* ContentView.swift */,
 				DC53A702269AD728002AF36C /* Assets.xcassets */,
 				DC4FF768271E99FA009115D9 /* Colors.xcassets */,
 				DC53A707269AD728002AF36C /* Info.plist */,
@@ -142,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4FF76D271E9BB7009115D9 /* ColorManager.swift in Sources */,
 				DC53A701269AD726002AF36C /* ContentView.swift in Sources */,
 				DC53A6FF269AD726002AF36C /* TemperatureGoApp.swift in Sources */,
 			);
