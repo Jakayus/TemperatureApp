@@ -23,7 +23,7 @@ struct ContentView: View {
                 .font(.system(.title, design: .rounded))
                 .bold()
                 .padding()
-                .background(Color.blue)
+                .background(ColorManager.custom_blue)
                 .cornerRadius(5)
            
                 .padding()
@@ -37,7 +37,7 @@ struct ContentView: View {
                 }
             }
             .pickerStyle(.wheel)
-            .background(Color.gray)
+            .background(ColorManager.custom_purple)
             .cornerRadius(4)
             .padding()
             
@@ -61,7 +61,7 @@ struct ContentView: View {
                     .padding()
                     .padding(.horizontal)
                     .padding(.horizontal)
-                    .background(Color.green)
+                    .background(ColorManager.custom_green)
                     .cornerRadius(4)
                 
             })
