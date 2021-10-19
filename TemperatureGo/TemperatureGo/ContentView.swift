@@ -26,32 +26,44 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(5)
            
-                //.padding()
+                .padding()
             Text("Your personal Temperature converter")
                 .font(.subheadline)
                 .foregroundColor(Color.secondary)
             Spacer()
-            
-            HStack {
-                Text("Degrees:")
-                TextField("Temperature", text: $tempInput)
-            }
-            Picker("Choose a tempature baseline", selection: $selectedTemp) {
+            Picker("Choose a temperature baseline", selection: $selectedTemp) {
                 ForEach (temperatureTypes, id: \.self) {
                     Text($0)
                 }
             }
+            .pickerStyle(.wheel)
+            .background(Color.gray)
+            .cornerRadius(4)
+            .padding()
             
+                        
+            HStack {
+                Text("Degrees:")
+                    .font(.callout)
+                    .bold()
+                TextField("Temperature", text: $tempInput)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+            }.padding()
+            
+
             Button(action: {
-                
+
             }, label: {
                 Text("Convert")
                     .font(.system(.title, design: .rounded))
                     .foregroundColor(.black)
                     .bold()
                     .padding()
+                    .padding(.horizontal)
+                    .padding(.horizontal)
                     .background(Color.green)
                     .cornerRadius(4)
+                
             })
             Spacer()
             
